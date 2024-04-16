@@ -96,7 +96,7 @@ namespace WebAPI.Controllers
 
                 var containerName = "containergabrielvitalhubg2t";
 
-                var connectionString = ""; //removido para permitir push no github
+                var connectionString = ""; // removido para permitir push no github
 
                 //chamar o método de upload de imagem 
                 user.Foto = await AzureBlobStorageHelper.UploadImageBlobAsync(pacienteModel.Arquivo!, connectionString, containerName);
